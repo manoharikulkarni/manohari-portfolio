@@ -241,19 +241,20 @@ code, .mono {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
   list-style: none;
 }
 
 .nav-link {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   font-weight: 500;
   color: var(--text-secondary);
-  padding: 8px 14px;
+  padding: 6px 11px;
   border-radius: var(--radius-pill);
   transition: var(--transition);
   position: relative;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -376,7 +377,7 @@ code, .mono {
 
 /* --- Section Formatting --- */
 .section {
-  padding-block: 84px;
+  padding-block: 80px;
   position: relative;
 }
 
@@ -386,14 +387,14 @@ code, .mono {
 }
 
 .section-header {
-  margin-bottom: 48px;
+  margin-bottom: 44px;
 }
 
 .kicker {
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.78rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   color: var(--accent);
   margin-bottom: 10px;
   display: inline-flex;
@@ -410,27 +411,32 @@ code, .mono {
 }
 
 .section-desc {
-  font-size: 1.15rem;
+  font-size: 1.125rem;
   color: var(--text-secondary);
-  max-width: 660px;
+  max-width: 680px;
   margin-top: 10px;
+  line-height: 1.6;
 }
 
 /* --- Hero Section --- */
 .hero {
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 56px;
+  padding-bottom: 76px;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 48px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1.34fr) minmax(320px, 370px);
+  gap: 52px;
+  align-items: start;
 }
 
 .hero-title {
+  font-size: clamp(2.05rem, 3.6vw, 2.95rem);
+  line-height: 1.22;
   margin-bottom: 24px;
+  font-weight: 500;
+  letter-spacing: -0.015em;
 }
 
 .hero-title em {
@@ -440,19 +446,20 @@ code, .mono {
 }
 
 .hero-bio {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .hero-bio p {
-  font-size: 1.125rem;
+  font-size: 1.08rem;
   line-height: 1.75;
+  margin-bottom: 1.2rem;
 }
 
 .hero-actions {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 12px;
 }
 
 /* Scientific Identity Card (Hero Right Column) */
@@ -460,7 +467,7 @@ code, .mono {
   background-color: var(--bg-surface);
   border: 1px solid var(--line-strong);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 28px 24px;
   box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
@@ -472,94 +479,126 @@ code, .mono {
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg, var(--accent), transparent);
 }
 
-.identity-header {
+.identity-card-inner {
   display: flex;
-  align-items: center;
-  gap: 18px;
-  margin-bottom: 22px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--line-subtle);
+  flex-direction: column;
 }
 
-.avatar-badge {
-  width: 64px;
-  height: 64px;
+.identity-portrait-frame {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 14px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-light), var(--bg-secondary));
+  overflow: hidden;
   border: 2px solid var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
+  box-shadow: 0 0 16px var(--accent-glow);
+  background-color: var(--bg-secondary);
+}
+
+.identity-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.identity-meta {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.identity-name {
+  font-size: 1.28rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+
+.identity-role {
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--accent);
-  flex-shrink: 0;
+  margin-bottom: 6px;
 }
 
-.identity-title-group h3 {
-  font-size: 1.25rem;
-  margin-bottom: 4px;
-}
-
-.identity-subtitle {
-  font-size: 0.88rem;
+.identity-affil {
+  font-size: 0.82rem;
   color: var(--text-muted);
+  line-height: 1.45;
 }
 
-.identity-metrics {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-bottom: 22px;
+.identity-divider {
+  height: 1px;
+  background-color: var(--line-subtle);
+  margin: 14px 0;
 }
 
-.metric-item {
-  background-color: var(--bg-secondary);
-  padding: 12px 14px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--line-subtle);
+.identity-credentials {
+  font-size: 0.86rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.metric-label {
-  font-size: 0.76rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-muted);
-  margin-bottom: 4px;
-}
-
-.metric-value {
-  font-size: 0.95rem;
+.credential-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   font-weight: 600;
   color: var(--text-primary);
 }
 
-.affiliation-list {
-  list-style: none;
-  font-size: 0.88rem;
+.credential-degree {
+  font-size: 0.86rem;
 }
 
-.affiliation-item {
+.credential-grade {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent);
+}
+
+.credential-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+.identity-focus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.identity-experience-notes {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line-subtle);
+}
+
+.exp-note {
   display: flex;
   align-items: baseline;
-  gap: 10px;
-  margin-bottom: 10px;
-  color: var(--text-secondary);
+  gap: 8px;
+  margin-bottom: 6px;
+  line-height: 1.45;
 }
 
-.affiliation-item:last-child {
+.exp-note:last-child {
   margin-bottom: 0;
 }
 
-.affiliation-icon {
+.exp-bullet {
   color: var(--accent);
-  font-size: 0.95rem;
+  font-size: 0.75rem;
 }
 
 /* --- The Research Story (Narrative Timeline) --- */
@@ -1209,7 +1248,7 @@ code, .mono {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
   .nav-links {
     display: none;
   }
@@ -1231,7 +1270,9 @@ code, .mono {
   .mobile-toggle {
     display: flex;
   }
+}
 
+@media (max-width: 768px) {
   .project-card {
     padding: 24px;
   }
