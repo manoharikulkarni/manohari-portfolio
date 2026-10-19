@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Manohari Kulkarni — Cancer Biologist & Translational Researcher</title>
+  <meta name="description" content="Academic research portfolio of Manohari Kulkarni, early-career cancer biologist investigating DNA damage response, SUMOylation adaptations in TNBC, nanomedicine, and translational oncology.">
+  <meta name="keywords" content="Manohari Kulkarni, Cancer Biology, NSMCE2, SUMOylation, Triple Negative Breast Cancer, PARP inhibitors, Olaparib, Nanoparticles, Rutin, Molecular Docking, Translational Oncology">
+  <meta name="author" content="Manohari Kulkarni">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Manohari Kulkarni — Cancer Biologist & Translational Researcher">
+  <meta property="og:description" content="Investigating how cancer cells survive and resist cell death: connecting molecular mechanisms with patient-centered translational research.">
+  <meta property="og:image" content="assets/images/manohari_kulkarni.png">
+
+  <!-- Google Fonts: Editorial Serif + Clean Sans + Technical Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Executive Navigation Header -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrapper">
+      <a href="#top" class="brand-link" aria-label="Manohari Kulkarni Home">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Manohari Kulkarni</span>
+      </a>
+
+      <!-- Desktop Nav List -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">Overview</a></li>
+          <li><a href="#story" class="nav-link">Story</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
+          <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+          <li><a href="#publications" class="nav-link">Publications</a></li>
+          <li><a href="#contact" class="nav-link">Next & Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & CV Download) -->
+      <div class="nav-actions">
+        <button class="btn-icon" id="theme-toggle" aria-label="Toggle visual theme (Light/Dark mode)" title="Toggle visual theme">
+          <svg id="theme-icon-sun" class="icon" viewBox="0 0 24 24" style="display:none;"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.39.39-1.03 0-1.41s-1.02-.39-1.41 0z"/></svg>
+          <svg id="theme-icon-moon" class="icon" viewBox="0 0 24 24"><path d="M12.3 2a10 10 0 0 0-.19 14 10 10 0 0 0 11.89 3.82 1 1 0 0 0 .47-1.33 1 1 0 0 0-1.12-.56A8 8 0 1 1 10.07 3.94a1 1 0 0 0-.55-1.12A1 1 0 0 0 12.3 2z"/></svg>
+        </button>
+
+        <a href="assets/docs/Manohari_Kulkarni_CV.pdf" download="Manohari_Kulkarni_CV.pdf" class="btn btn-primary btn-sm" id="cv-header-download">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download CV</span>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="section hero" id="about">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="kicker">Cancer Biology · Translational Oncology · Bengaluru, India</div>
+          <h1 class="hero-title">
+            I got tired of measuring scratch assays by hand, so <em>I taught Python to do it.</em>
+          </h1>
+          <div class="hero-bio">
+            <p class="lead">
+              That small impatience says a lot about how I do science. I pay close attention to what slows the path from a biological question to a rigorous answer, and I build the tools, protocols, or explanations needed to bridge that gap.
+            </p>
+            <p>
+              I am an M.Sc. graduate in Cancer Biology from NUCSER, Mangaluru. My research focuses on how cancer cells adapt to survive therapeutic stress—specifically how <em>NSMCE2</em>-mediated and compensatory SUMOylation rewire the DNA damage response in Triple-Negative Breast Cancer (TNBC) treated with PARP inhibitors.
+            </p>
+            <p>
+              Grounded by clinical exposure in sarcoma patient care and strengthened by teaching high school chemistry, I am preparing for doctoral research to uncover mechanistic vulnerabilities in chemoresistant tumors.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a href="#research" class="btn btn-primary">
+              <span>Explore Research Projects</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#story" class="btn btn-outline">Read Scientific Story</a>
+            <a href="assets/docs/Manohari_Kulkarni_CV.pdf" target="_blank" class="btn btn-outline">View CV (PDF)</a>
+          </div>
+        </div>
+
+        <!-- Identity & Institutional Affiliation Card -->
+        <aside class="identity-card" aria-label="Researcher profile summary">
+          <div class="identity-header">
+            <img src="assets/images/manohari_kulkarni.png" alt="Manohari Kulkarni" class="avatar-badge" style="object-fit:cover; padding:0;" onerror="this.outerHTML='<div class=\'avatar-badge\'>MK</div>'">
+            <div class="identity-title-group">
+              <h3>Manohari M Kulkarni</h3>
+              <p class="identity-subtitle">Postgraduate Researcher in Cancer Biology</p>
+            </div>
+          </div>
+
+          <div class="identity-metrics">
+            <div class="metric-item">
+              <div class="metric-label">M.Sc. Training</div>
+              <div class="metric-value">Cancer Biology (NUCSER)</div>
+              <span class="badge" style="margin-top:4px;">CGPA: 8.07 / 10</span>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">B.Sc. Training</div>
+              <div class="metric-value">Biotech, Biochem, Genetics</div>
+              <span class="badge" style="margin-top:4px;">Dayananda Sagar Univ</span>
+            </div>
+          </div>
+
+          <ul class="affiliation-list">
+            <li class="affiliation-item">
+              <span class="affiliation-icon">🔬</span>
+              <span><strong>M.Sc. Thesis:</strong> Dept. of Molecular Genetics & Cancer, NUCSER (Nitte DU)</span>
+            </li>
+            <li class="affiliation-item">
+              <span class="affiliation-icon">🏥</span>
+              <span><strong>Clinical Exposure:</strong> Sarcoma Care Team, HCG Cancer Centre & The Purple Spark</span>
+            </li>
+            <li class="affiliation-item">
+              <span class="affiliation-icon">📖</span>
+              <span><strong>Scholarly Writing:</strong> Published Book Chapter on Cancer Epigenetics (Bentham Science, 2026)</span>
+            </li>
+            <li class="affiliation-item">
+              <span class="affiliation-icon">🎓</span>
+              <span><strong>Pedagogy:</strong> ICSE/ISC Chemistry Teacher (Grades 7–12), Tapovan School</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ==================== SCIENTIFIC JOURNEY (STORY) ==================== -->
+    <section class="section section-alt" id="story">
+      <div class="container reading-container">
+        <header class="section-header">
+          <div class="kicker">Scientific Trajectory</div>
+          <h2>My Story: The Path to Translational Oncology</h2>
+          <p class="section-desc">
+            A progression shaped by interdisciplinary curiosity, bench laboratory training, patient encounters, and pedagogical discipline.
+          </p>
+        </header>
+
+        <div class="story-timeline">
+
+          <!-- Milestone 1 -->
+          <article class="timeline-milestone">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2019 – 2024 · Undergraduate Foundations</div>
+            <h3 class="timeline-title">Where the Curiosity Began</h3>
+            <div class="timeline-content">
+              <p>
+                I completed Class XII with Physics, Chemistry, Mathematics, and Biology (85.6%), discovering that my deepest intellectual interest lay precisely where physical and chemical principles meet living systems.
+              </p>
+              <p>
+                Pursuing a B.Sc. in Biotechnology, Biochemistry, and Genetics at Dayananda Sagar University (CGPA 7.07/10) gave me the experimental habits, sterile culture discipline, and scientific literacy to explore cancer at the molecular level.
+              </p>
+              <div class="milestone-callout">
+                <strong>First Milestone Project (2024):</strong> Formulated Rutin-loaded PEG-PLGA nanoparticles via solvent-antisolvent nanoprecipitation and performed in silico molecular docking (AutoDock Vina, Chimera) to study how targeting autophagy (mTORC1, ULK1) and metabolic regulators (HK-II, PFK-1, FASN, GLS) could suppress tumorigenesis.
+              </div>
+            </div>
+          </article>
+
+          <!-- Milestone 2 -->
+          <article class="timeline-milestone active">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 – 2026 · Postgraduate Specialisation</div>
+            <h3 class="timeline-title">Learning to Think and Work at the Bench</h3>
+            <div class="timeline-content">
+              <p>
+                At Nitte University Centre for Science Education and Research (NUCSER) in Mangaluru, my M.Sc. in Cancer Biology moved from textbook pathways to long days with cell lines. 
+              </p>
+              <p>
+                Under the guidance of <strong>Dr. Vivek Tripathi</strong> and <strong>Dr. Sudarshan Kini</strong>, my dissertation investigated how <em>NSMCE2</em> (a SUMO E3 ligase within the SMC5/6 chromosome maintenance complex) enables Triple-Negative Breast Cancer cells to tolerate replication stress and PARP inhibitor (Olaparib) treatment.
+              </p>
+              <p>
+                When repeated wound scratch assays produced hundreds of images that demanded manual measurement, I wrote custom Python software using OpenCV and NumPy to automate edge detection and contour area calculation. I also authored a book chapter on the role of epigenetics in cancer progression for Bentham Science.
+              </p>
+            </div>
+          </article>
+
+          <!-- Milestone 3 -->
+          <article class="timeline-milestone">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">June – July 2026 · Clinical Grounding</div>
+            <h3 class="timeline-title">Meeting the Patients Behind the Data</h3>
+            <div class="timeline-content">
+              <p>
+                At HCG Cancer Centre in Bengaluru, as an intern with The Purple Spark (the medtech arm of The Yellow Ribbon), I contributed to clinical data collection for a long-term cohort of 10+ year sarcoma survivors under the Orthopaedic Oncology & Sarcoma Care Team.
+              </p>
+              <p>
+                Recording sarcoma subtypes, complex multi-agent regimens, and multidisciplinary tumor board decisions brought the reality of clinical oncology into sharp focus. Research is never just a Western blot or a p-value—it represents a human life depending on whether a therapy works.
+              </p>
+            </div>
+          </article>
+
+          <!-- Milestone 4 -->
+          <article class="timeline-milestone">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">August 2026 – Present · Communication & Pedagogy</div>
+            <h3 class="timeline-title">Learning by Teaching</h3>
+            <div class="timeline-content">
+              <p>
+                I teach ICSE and ISC Chemistry to grades 7 through 12 at Tapovan School, Bengaluru. Explaining thermodynamics, reaction kinetics, and stoichiometry to young students is the ultimate test of first-principles understanding.
+              </p>
+              <p>
+                Mentoring students in laboratory practicals sharpens my patience, precision, and ability to communicate complex concepts with absolute clarity.
+              </p>
+            </div>
+          </article>
+
+          <!-- Milestone 5 -->
+          <article class="timeline-milestone">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Upcoming · Doctoral Research</div>
+            <h3 class="timeline-title">The Next Step: A PhD in Cancer Biology</h3>
+            <div class="timeline-content">
+              <p>
+                I am prepared to undertake doctoral training where I can formulate rigorous questions about cancer survival adaptations, test them at the bench with modern molecular tools, and contribute findings that have genuine translational potential.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESEARCH CASE STUDIES ==================== -->
+    <section class="section" id="research">
+      <div class="container">
+        <header class="section-header">
+          <div class="kicker">Primary Research</div>
+          <h2>Investigative Case Studies</h2>
+          <p class="section-desc">
+            Detailed dissections of completed experimental and computational research projects, highlighting the biological question, experimental rationale, methodology, and verified findings.
+          </p>
+        </header>
+
+        <!-- Project 1: MSc Dissertation -->
+        <article class="project-card" id="project-nsmce2">
+          <header class="project-header">
+            <div>
+              <div class="project-tags">
+                <span class="badge badge-accent">M.Sc. Dissertation</span>
+                <span class="badge">May 2026</span>
+                <span class="badge">TNBC</span>
+                <span class="badge">PARP Inhibitors</span>
+                <span class="badge">Python Automation</span>
+              </div>
+              <h3 class="project-title">
+                Role of Compensatory SUMOylation Mechanisms in NSMCE2-Deficient Breast Cancer Cells
+              </h3>
+              <p class="project-institution">
+                Department of Molecular Genetics and Cancer, NUCSER, Nitte (Deemed to be University) · Guided by Dr. Vivek Tripathi & Dr. Sudarshan Kini
+              </p>
+            </div>
+            <div>
+              <a href="assets/docs/MSc_Dissertation_NSMCE2_Breast_Cancer.pdf" target="_blank" class="btn btn-outline btn-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <span>Read Full Thesis (PDF)</span>
+              </a>
+            </div>
+          </header>
+
+          <!-- Quad Narrative Breakdown -->
+          <div class="science-quad-grid">
+            <div class="quad-box">
+              <div class="quad-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                Biological Question
+              </div>
+              <div class="quad-content">
+                Triple-Negative Breast Cancer (TNBC) suffers from severe replication stress and genomic instability, yet develops marked resistance to DNA-damaging therapies like PARP inhibitors (Olaparib). Does <strong>NSMCE2</strong> (the SUMO E3 ligase in the SMC5/6 chromosomal maintenance complex) coordinate an adaptive survival response that protects stalled replication forks and confers chemoresistance?
+              </div>
+            </div>
+
+            <div class="quad-box">
+              <div class="quad-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                Hypothesis & Rationale
+              </div>
+              <div class="quad-content">
+                We hypothesized that elevated NSMCE2 expression provides an adaptive mechanism allowing TNBC cells to survive chronic replication stress. When perturbed, cells may leverage compensatory SUMOylation nodes (e.g. UBC9, PIAS1/4) to maintain chromatin stability, avoid fork collapse, and sustain cellular migration under chemotherapeutic pressure.
+              </div>
+            </div>
+
+            <div class="quad-box">
+              <div class="quad-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                Experimental Approach
+              </div>
+              <div class="quad-content">
+                Compared two TNBC lines (mesenchymal <strong>MDA-MB-231</strong> and basal-like <strong>MDA-MB-468</strong>) against luminal ER+ control (<strong>MCF-7</strong>).
+                Conducted RT-qPCR (18S rRNA & GAPDH reference genes), resolved protein quantification discrepancies by switching from Bradford to detergent-compatible BCA assay, performed Western blotting (anti-NSMCE2 ~28–29 kDa vs β-actin ~40 kDa), colchicine metaphase karyotyping, and wound-scratch migration assays under Olaparib (1000 nM).
+              </div>
+            </div>
+
+            <div class="quad-box">
+              <div class="quad-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                Verified Key Findings
+              </div>
+              <div class="quad-content">
+                <strong>1. Upregulation:</strong> NSMCE2 mRNA and protein levels were significantly higher in both TNBC lines compared to MCF-7 (52.7-fold in MDA-MB-468, 21.6-fold in MDA-MB-231 vs GAPDH).<br>
+                <strong>2. Migration Resilience:</strong> While Olaparib inhibited migration across all cell lines, MDA-MB-231 exhibited partial resistance to anti-migratory effects (87–89% closure at 24h).<br>
+                <strong>3. Hyper-triploidy:</strong> Metaphase spreads demonstrated hyper-triploid chromosome distributions (>60 chromosomes).
+              </div>
+            </div>
+          </div>
+
+          <!-- Genuine Thesis Evidence Figures Grid -->
+          <div class="project-spotlight">
+            <h4 class="spotlight-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+              <span>Experimental Evidence & Dissertation Figures</span>
+            </h4>
+            <p class="spotlight-subtitle">Authentic molecular and microscopic data extracted directly from the M.Sc. dissertation.</p>
+
+            <div class="conf-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+              <!-- Figure 1: Western Blot -->
+              <div class="metric-item figure-thumbnail" data-modal="modal-wb" style="cursor:pointer;" title="Click to enlarge Western blot">
+                <img src="assets/images/msc_western_blot_and_mcf7_scratch_1.jpg" alt="Western Blot of NSMCE2 vs beta-actin" style="width:100%; border-radius:4px; margin-bottom:8px; border:1px solid var(--line-subtle);">
+                <div class="stat-label">Fig 3.4 · Western Blot</div>
+                <div style="font-size:0.84rem; color:var(--text-secondary); margin-top:4px;">
+                  NSMCE2 protein (~28-29 kDa) across MCF-7, MDA-MB-231, and MDA-MB-468 with uniform β-actin (~40 kDa) loading.
+                </div>
+              </div>
+
+              <!-- Figure 2: qPCR Expression -->
+              <div class="metric-item figure-thumbnail" data-modal="modal-qpcr" style="cursor:pointer;" title="Click to enlarge qPCR chart">
+                <img src="assets/images/msc_qpcr_expression_1.png" alt="Relative gene expression of NSMCE2" style="width:100%; border-radius:4px; margin-bottom:8px; border:1px solid var(--line-subtle);">
+                <div class="stat-label">Fig 3.3 · RT-qPCR Quantification</div>
+                <div style="font-size:0.84rem; color:var(--text-secondary); margin-top:4px;">
+                  Relative expression of NSMCE2 normalized to 18S rRNA and GAPDH confirming TNBC upregulation.
+                </div>
+              </div>
+
+              <!-- Figure 3: Wound Scratch Microscopy -->
+              <div class="metric-item figure-thumbnail" data-modal="modal-scratch" style="cursor:pointer;" title="Click to enlarge scratch assay">
+                <img src="assets/images/msc_scratch_mdamb231_2.jpg" alt="Wound healing of MDA-MB-231 cells" style="width:100%; border-radius:4px; margin-bottom:8px; border:1px solid var(--line-subtle);">
+                <div class="stat-label">Fig 3.7 · Scratch Assay (MDA-MB-231)</div>
+                <div style="font-size:0.84rem; color:var(--text-secondary); margin-top:4px;">
+                  Control vs Olaparib-treated cells sampled at 0h, 4h, 8h, 22h, and 24h post-wounding.
+                </div>
+              </div>
+
+              <!-- Figure 4: SMC5/6 & SUMOylation Cascade -->
+              <div class="metric-item figure-thumbnail" data-modal="modal-smc" style="cursor:pointer;" title="Click to enlarge pathway schematic">
+                <img src="assets/images/msc_sumoylation_cascade_1.jpg" alt="SUMOylation enzymatic cascade" style="width:100%; border-radius:4px; margin-bottom:8px; border:1px solid var(--line-subtle);">
+                <div class="stat-label">Fig 1.2 · SUMOylation Cascade</div>
+                <div style="font-size:0.84rem; color:var(--text-secondary); margin-top:4px;">
+                  Enzymatic cycle of maturation, SAE1/2 activation, UBC9 conjugation, and NSMCE2/E3 ligation.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Automation Spotlight -->
+          <div class="project-spotlight">
+            <h4 class="spotlight-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <span>Automated Scratch Assay Image Analysis Pipeline</span>
+            </h4>
+            <p class="spotlight-subtitle">
+              Custom Python program developed in-house using OpenCV, NumPy, and pandas to replace manual, error-prone wound tracing.
+            </p>
+
+            <div class="assay-demo-wrapper">
+              <!-- Visual Simulation -->
+              <div class="assay-visualizer">
+                <div class="assay-viewport" id="scratch-viewport">
+                  <svg viewBox="0 0 400 240" class="scratch-canvas" id="interactive-scratch-svg">
+                    <defs>
+                      <pattern id="cellPattern" width="12" height="12" patternUnits="userSpaceOnUse">
+                        <circle cx="6" cy="6" r="3.5" fill="#4B5563" opacity="0.6"/>
+                      </pattern>
+                      <pattern id="cellPatternDense" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <circle cx="5" cy="5" r="3.8" fill="#6B7280" opacity="0.8"/>
+                      </pattern>
+                    </defs>
+                    <!-- Background cell monolayer left -->
+                    <rect x="0" y="0" width="120" height="240" fill="url(#cellPatternDense)" id="cell-left"/>
+                    <!-- Background cell monolayer right -->
+                    <rect x="280" y="0" width="120" height="240" fill="url(#cellPatternDense)" id="cell-right"/>
+                    <!-- The Cell-free Scratch Wound Zone -->
+                    <path id="wound-contour" d="M 120 0 Q 135 120 120 240 L 280 240 Q 265 120 280 0 Z" fill="#111827" stroke="#374151" stroke-width="1.5"/>
+                    <!-- Overlay Detection Mask (Toggled by user) -->
+                    <path id="mask-overlay" d="M 120 0 Q 135 120 120 240 L 280 240 Q 265 120 280 0 Z" fill="rgba(229, 169, 60, 0.45)" stroke="#E5A93C" stroke-width="2" stroke-dasharray="4 4" style="display:none;"/>
+                    <text x="200" y="125" text-anchor="middle" fill="#9CA3AF" font-family="var(--font-mono)" font-size="12" id="wound-svg-text">Wound Area: 100%</text>
+                  </svg>
+                </div>
+
+                <div class="assay-controls">
+                  <div class="time-pills">
+                    <button class="time-pill active" data-time="0">0h</button>
+                    <button class="time-pill" data-time="8">8h</button>
+                    <button class="time-pill" data-time="24">24h</button>
+                    <button class="time-pill" data-time="48">48h</button>
+                  </div>
+
+                  <label class="mask-toggle">
+                    <input type="checkbox" id="toggle-mask">
+                    <span>Show OpenCV Edge Mask</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Readout & Algorithm Description -->
+              <div class="assay-readout">
+                <div class="readout-stat">
+                  <div class="stat-label">Calculated Wound Closure</div>
+                  <div class="stat-val" id="closure-stat">0.0% <em>(Baseline)</em></div>
+                </div>
+
+                <div class="readout-stat">
+                  <div class="stat-label">Mathematical Formula</div>
+                  <div class="mono" style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">
+                    % Closure = [ (Area₀ₕ − Areaₜ) / Area₀ₕ ] × 100
+                  </div>
+                </div>
+
+                <div class="code-snippet-box">
+# Sequential OpenCV Pipeline:
+# 1. Convert to 8-bit grayscale
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+# 2. Gradient operator for cell-free boundary
+grad = cv2.morphologyEx(gray, cv2.MORPH_GRADIENT, kernel)
+# 3. Thresholding & Median Blur (kernel radius 7)
+blurred = cv2.medianBlur(grad, 7)
+# 4. Smallest contour enclosing wound
+contours, _ = cv2.findContours(blurred, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+wound_area = cv2.contourArea(min(contours, key=cv2.contourArea))
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: BSc Dissertation -->
+        <article class="project-card" id="project-nanotech">
+          <header class="project-header">
+            <div>
+              <div class="project-tags">
+                <span class="badge badge-accent">B.Sc. Dissertation</span>
+                <span class="badge">May 2024</span>
+                <span class="badge">Nanomedicine</span>
+                <span class="badge">Molecular Docking</span>
+                <span class="badge">AutoDock Vina</span>
+                <span class="badge">FESEM</span>
+              </div>
+              <h3 class="project-title">
+                Rutin-Encapsulated PEG-PLGA Nanoparticles for Modulating Autophagy and Metabolism in Cancer
+              </h3>
+              <p class="project-institution">
+                SynTech Bio Solutions Lab, Dayananda Sagar University · Guided by Dr. Pronama Biswas
+              </p>
+            </div>
+            <div>
+              <a href="assets/docs/BSc_Dissertation_Rutin_Nanoparticles.pdf" target="_blank" class="btn btn-outline btn-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <span>Read Full Thesis (PDF)</span>
+              </a>
+            </div>
+          </header>
+
+          <div class="science-quad-grid">
+            <div class="quad-box">
+              <div class="quad-label">Biological Question</div>
+              <div class="quad-content">
+                Rutin is a natural dietary flavonoid with known anti-tumor and antioxidant activities, but its therapeutic utility is severely limited by poor aqueous solubility and low bioavailability. Can encapsulation into biodegradable <strong>PEG-PLGA nanoparticles</strong> improve stability, and how effectively does Rutin bind key regulators of autophagy and metabolic reprogramming compared to FDA-approved inhibitors?
+              </div>
+            </div>
+
+            <div class="quad-box">
+              <div class="quad-label">Formulation Approach</div>
+              <div class="quad-content">
+                Employed <strong>Solvent-Antisolvent Nanoprecipitation</strong>. Rutin and PEG-PLGA (MW 55 kDa) were dissolved in organic solvents (DMSO/DCM) and introduced drop-wise via syringe pump into an aqueous anti-solvent phase stabilized by Polyvinyl Alcohol (PVA 30–70 kDa). Optimized stirring speed, solvent ratios, and centrifugation across four experimental formulation trials.
+              </div>
+            </div>
+
+            <div class="quad-box">
+              <div class="quad-label">Characterization & FESEM</div>
+              <div class="quad-content">
+                Surface morphology and particle size distribution were analyzed via <strong>Field Emission Scanning Electron Microscopy (FESEM)</strong> using JSM-7100F and Apreo 2 SEM with gold/chromium sputtering. Trial 2 successfully generated uniform spherical nanoparticles with distinct porous surface morphology.
+              </div>
+            </div>
+
+            <div class="quad-box">
+              <div class="quad-label">Computational Validation</div>
+              <div class="quad-content">
+                Retrieved crystal structures from RCSB PDB, validated stereochemistry using PROCHECK Ramachandran plots (>93% residues in favored regions), VERIFY3D, and VoroMQA. Performed molecular docking with <strong>AutoDock Vina</strong>, Discovery Studio Visualizer, and UCSF Chimera across 6 critical cancer targets.
+              </div>
+            </div>
+          </div>
+
+          <!-- Genuine BSc Thesis Evidence Figures -->
+          <div class="project-spotlight">
+            <h4 class="spotlight-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+              <span>Dissertation Evidence: Electron Microscopy & Docking Visuals</span>
+            </h4>
+            <p class="spotlight-subtitle">Authentic FESEM micrographs and computational docking poses extracted from the B.Sc. dissertation.</p>
+
+            <div class="conf-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+              <!-- Figure 1: FESEM Trial 2 -->
+              <div class="metric-item figure-thumbnail" data-modal="modal-fsem" style="cursor:pointer;" title="Click to enlarge FESEM image">
+                <img src="assets/images/bsc_fsem_trial2_spheres_1.png" alt="FESEM of Trial 2 PEG-PLGA Nanoparticles" style="width:100%; border-radius:4px; margin-bottom:8px; border:1px solid var(--line-subtle);">
+                <div class="stat-label">Fig 4.12 b · FESEM Nanoparticles (Trial 2)</div>
+                <div style="font-size:0.84rem; color:var(--text-secondary); margin-top:4px;">
+                  Spherical PEG-PLGA nanoparticles with uniform porous surface morphology under high-resolution electron microscopy.
+                </div>
+              </div>
+
+              <!-- Figure 2: Synthesis Flow -->
+              <div class="metric-item figure-thumbnail" data-modal="modal-synthesis" style="cursor:pointer;" title="Click to enlarge synthesis schematic">
+                <img src="assets/images/bsc_nanoparticle_synthesis_flow_1.png" alt="Nanoparticles synthesis flow" style="width:100%; border-radius:4px; margin-bottom:8px; border:1px solid var(--line-subtle);">
+                <div class="stat-label">Fig 3.4 · Nanoprecipitation Workflow</div>
+                <div style="font-size:0.84rem; color:var(--text-secondary); margin-top:4px;">
+                  Solvent-antisolvent method with syringe pump flow rate, magnetic stirring, cooling centrifugation, and vacuum drying.
+                </div>
+              </div>
+
+              <!-- Figure 3: Molecular Docking Pose -->
+              <div class="metric-item figure-thumbnail" data-modal="modal-docking" style="cursor:pointer;" title="Click to enlarge docking pose">
+                <img src="assets/images/bsc_docking_mtorc1_rutin_1.jpg" alt="Molecular docking of mTORC1 with Rutin" style="width:100%; border-radius:4px; margin-bottom:8px; border:1px solid var(--line-subtle);">
+                <div class="stat-label">Fig 4.5 a · mTORC1 Binding Pocket</div>
+                <div style="font-size:0.84rem; color:var(--text-secondary); margin-top:4px;">
+                  Rutin docking pose in mTORC1 active pocket demonstrating ATP-competitive interaction (-10.6 kcal/mol).
+                </div>
+              </div>
+
+              <!-- Figure 4: Multi-Ligand Simultaneous Docking -->
+              <div class="metric-item figure-thumbnail" data-modal="modal-mlsd" style="cursor:pointer;" title="Click to enlarge MLSD synergy">
+                <img src="assets/images/bsc_mlsd_docking_binding_3.jpg" alt="Multi-Ligand Simultaneous Docking" style="width:100%; border-radius:4px; margin-bottom:8px; border:1px solid var(--line-subtle);">
+                <div class="stat-label">Fig 4.6 c · Synergistic MLSD Interaction</div>
+                <div style="font-size:0.84rem; color:var(--text-secondary); margin-top:4px;">
+                  Inter-ligand interaction between Rutin and PP242 yielding enhanced multi-ligand affinity (-13.558 kcal/mol).
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Molecular Docking Quantitative Results Table -->
+          <div class="project-spotlight">
+            <h4 class="spotlight-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              <span>Comparative In Silico Binding Affinities (AutoDock Vina)</span>
+            </h4>
+            <p class="spotlight-subtitle">
+              Rutin demonstrated superior or comparable binding energy against established clinical inhibitors across all 6 cancer target proteins.
+            </p>
+
+            <div class="docking-table-wrapper">
+              <table class="docking-table">
+                <thead>
+                  <tr>
+                    <th>Target Protein</th>
+                    <th>PDB ID</th>
+                    <th>Biological Pathway</th>
+                    <th>Rutin Binding Energy (S)</th>
+                    <th>Clinical Reference Inhibitor</th>
+                    <th>Inhibitor Binding Energy (S)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>mTORC1</strong></td>
+                    <td><code>8ER6</code></td>
+                    <td>Autophagy Master Regulator</td>
+                    <td class="docking-score">-10.6 kcal/mol</td>
+                    <td>Rapamycin / XL388</td>
+                    <td>-10.0 / -10.7 kcal/mol</td>
+                  </tr>
+                  <tr>
+                    <td><strong>ULK1</strong></td>
+                    <td><code>4WNO</code></td>
+                    <td>Autophagy Initiation Kinase</td>
+                    <td class="docking-score">-9.5 kcal/mol</td>
+                    <td>SBI-0206965</td>
+                    <td>-7.4 kcal/mol</td>
+                  </tr>
+                  <tr>
+                    <td><strong>PFK-1</strong></td>
+                    <td><code>7LW1</code></td>
+                    <td>Glycolysis Rate-Limiting Step</td>
+                    <td class="docking-score">-9.8 kcal/mol</td>
+                    <td>2,5-Anhydroglucitol-1,6-BP</td>
+                    <td>-5.7 kcal/mol</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Hexokinase-II</strong></td>
+                    <td><code>2NZT</code></td>
+                    <td>Warburg Effect / Glucose Phosphorylation</td>
+                    <td class="docking-score">-9.5 kcal/mol</td>
+                    <td>3-Bromopyruvate / 2-DG</td>
+                    <td>-5.7 / -5.3 kcal/mol</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Fatty Acid Synthase (FASN)</strong></td>
+                    <td><code>4Z49</code></td>
+                    <td>De Novo Lipid Synthesis</td>
+                    <td class="docking-score">-9.6 kcal/mol</td>
+                    <td>C75 / Cerulenin</td>
+                    <td>-5.4 / -5.5 kcal/mol</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Glutaminase (GLS)</strong></td>
+                    <td><code>8BSK</code></td>
+                    <td>Glutaminolysis & Energy Metabolism</td>
+                    <td class="docking-score">-8.9 kcal/mol</td>
+                    <td>CB839 (Telaglenastat)</td>
+                    <td>-7.2 kcal/mol</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==================== SCIENTIFIC CAPABILITIES (SKILLS) ==================== -->
+    <section class="section section-alt" id="capabilities">
+      <div class="container">
+        <header class="section-header">
+          <div class="kicker">Core Competencies</div>
+          <h2>Scientific Capabilities & Technical Repertoire</h2>
+          <p class="section-desc">
+            Organised by experimental actions—reflecting real laboratory proficiency, instrumentation experience, and computational tool-building.
+          </p>
+        </header>
+
+        <div class="capabilities-grid">
+          <!-- Card 1: Grow & Maintain -->
+          <div class="capability-card">
+            <h3 class="capability-verb">I grow & manipulate<em>.</em></h3>
+            <p class="capability-desc">Maintaining living cell cultures with rigorous aseptic technique and executing targeted genetic interventions.</p>
+            <div class="skill-chips">
+              <span class="skill-chip">Mammalian Cell Culture</span>
+              <span class="skill-chip">In Vitro Cancer Models (TNBC & Luminal)</span>
+              <span class="skill-chip">siRNA Knockdown Optimization</span>
+              <span class="skill-chip">Plasmid Transfection</span>
+              <span class="skill-chip">Cell Line Cryopreservation</span>
+              <span class="skill-chip">Aseptic Hood Operations</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Measure & Quantify -->
+          <div class="capability-card">
+            <h3 class="capability-verb">I measure & quantify<em>.</em></h3>
+            <p class="capability-desc">Extracting reliable molecular readouts and phenotypic metrics from complex biological systems.</p>
+            <div class="skill-chips">
+              <span class="skill-chip">RT-qPCR (QuantStudio 5, ΔΔCt analysis)</span>
+              <span class="skill-chip">SDS-PAGE & Western Blotting</span>
+              <span class="skill-chip">Total RNA Extraction (TRIzol)</span>
+              <span class="skill-chip">cDNA Synthesis</span>
+              <span class="skill-chip">Agarose Gel Electrophoresis</span>
+              <span class="skill-chip">BCA & Bradford Protein Assays</span>
+              <span class="skill-chip">ELISA</span>
+              <span class="skill-chip">Clonogenic Survival Assays</span>
+              <span class="skill-chip">Wound Scratch Migration Assays</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Formulate & Synthesize -->
+          <div class="capability-card">
+            <h3 class="capability-verb">I formulate & engineer<em>.</em></h3>
+            <p class="capability-desc">Engineering nanoscale drug delivery vehicles to overcome pharmacokinetic and bioavailability barriers.</p>
+            <div class="skill-chips">
+              <span class="skill-chip">PEG-PLGA Nanoparticle Synthesis</span>
+              <span class="skill-chip">Solvent-Antisolvent Nanoprecipitation</span>
+              <span class="skill-chip">Drug Delivery Vehicle Formulation</span>
+              <span class="skill-chip">FESEM Sample Preparation & Sputter Coating</span>
+              <span class="skill-chip">Field Emission SEM Surface Analysis</span>
+              <span class="skill-chip">Particle Size Optimization</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Model & Compute -->
+          <div class="capability-card">
+            <h3 class="capability-verb">I model & compute<em>.</em></h3>
+            <p class="capability-desc">Leveraging in silico structural biology and scripting to formulate testable molecular hypotheses.</p>
+            <div class="skill-chips">
+              <span class="skill-chip">AutoDock Vina Docking Simulations</span>
+              <span class="skill-chip">Multi-Ligand Simultaneous Docking (MLSD)</span>
+              <span class="skill-chip">BIOVIA Discovery Studio (2D Interaction Maps)</span>
+              <span class="skill-chip">UCSF Chimera 3D Visualization</span>
+              <span class="skill-chip">PyMOL Structural Superposition</span>
+              <span class="skill-chip">SwissADME & ADMETlab Pharmacokinetics</span>
+              <span class="skill-chip">PROCHECK Ramachandran Validation</span>
+              <span class="skill-chip">BLAST & Clustal Omega Alignments</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Build Tools & Communicate (Wide) -->
+          <div class="capability-card wide-card">
+            <h3 class="capability-verb">I build tools & explain<em>.</em></h3>
+            <p class="capability-desc">Creating bespoke algorithms to solve workflow bottlenecks and distilling high-dimensional science for diverse audiences.</p>
+            <div class="skill-chips">
+              <span class="skill-chip">Python Image Processing (OpenCV, NumPy)</span>
+              <span class="skill-chip">Automated Wound Closure Software Pipeline</span>
+              <span class="skill-chip">R (Basic Statistical Packages)</span>
+              <span class="skill-chip">GraphPad Prism (Biostatistics & RQ)</span>
+              <span class="skill-chip">ICSE/ISC Chemistry Pedagogy (Grades 7–12)</span>
+              <span class="skill-chip">Peer-Reviewed Book Chapter Author</span>
+              <span class="skill-chip">Clinical Data Collection (10+ Year Sarcoma Cohort)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WORKING PHILOSOPHY ==================== -->
+    <section class="section" id="philosophy">
+      <div class="container">
+        <header class="section-header">
+          <div class="kicker">Scientific Mindset</div>
+          <h2>How I Think and Work as a Scientist</h2>
+          <p class="section-desc">
+            Core operating principles that guide my experiments, problem-solving habits, and research aspirations.
+          </p>
+        </header>
+
+        <div class="philosophy-grid">
+          <div class="philosophy-card">
+            <span class="philosophy-num">01</span>
+            <h3>I Build Bridges Between Disciplines</h3>
+            <p>
+              I am trained where chemistry, biochemistry, and genetics converge. Having worked at the bench with mammalian cells, designed molecular delivery vehicles, modeled docking in silico, and observed sarcoma patient care at a major cancer centre, I am comfortable operating across the lab bench, computational script, and clinic.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <span class="philosophy-num">02</span>
+            <h3>I Make My Own Tools</h3>
+            <p>
+              When a laboratory protocol is slow, subjective, or bottlenecked, I don't settle for the manual friction. Developing an automated Python image segmentation pipeline for wound-scratch assays taught me that an experimental biologist who can code is empowered to ask deeper questions and process larger datasets with reproducibility.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <span class="philosophy-num">03</span>
+            <h3>I Keep Patients Firmly in View</h3>
+            <p>
+              During my internship at HCG Cancer Centre reviewing decades of sarcoma survivorship records, I witnessed how oncologist teams debate patient trajectories. A molecular question matters far more when you can picture the patient whose therapeutic resistance it might one day overcome.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <span class="philosophy-num">04</span>
+            <h3>I Explain Things from First Principles</h3>
+            <p>
+              Teaching ICSE chemistry to adolescents has made me patient, rigorous, and intellectually honest. If you cannot explain the molecular rationale of a reaction or a therapeutic mechanism in simple terms, you haven't mastered it yet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PUBLICATIONS & ACADEMIC REPUTATION ==================== -->
+    <section class="section section-alt" id="publications">
+      <div class="container">
+        <header class="section-header">
+          <div class="kicker">Scholarly Output</div>
+          <h2>Publications & Academic Engagement</h2>
+          <p class="section-desc">
+            Peer-reviewed book chapter contribution and participation in international cancer biology conferences and technical workshops.
+          </p>
+        </header>
+
+        <!-- Book Chapter Card -->
+        <article class="pub-card">
+          <div class="pub-type">Peer-Reviewed Book Chapter · Published</div>
+          <h3 class="pub-title">
+            The Role of Epigenetics in Cancer Progression
+          </h3>
+          <p class="pub-meta">
+            In: <em>Cancer Targets: Novel Therapies and Emerging Research Directions (Part 1)</em><br>
+            Bentham Science Publishers · Published: April 24, 2026<br>
+            <span class="mono">DOI: 10.2174/9798898814113126010006</span>
+          </p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.2174/9798898814113126010006" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              <span>View at Bentham Science</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <button class="btn btn-outline btn-sm" id="btn-copy-citation" data-citation="Kulkarni, M. M. (2026). The Role of Epigenetics in Cancer Progression. In Cancer Targets: Novel Therapies and Emerging Research Directions (Part 1). Bentham Science Publishers. https://doi.org/10.2174/9798898814113126010006">
+              <span>Copy APA Citation</span>
+            </button>
+            <button class="btn btn-outline btn-sm" id="btn-copy-bibtex">
+              <span>Copy BibTeX</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Conferences & Workshops Grid -->
+        <h3 style="font-size: 1.35rem; margin-top: 36px; margin-bottom: 16px;">Conferences, Workshops & Symposia</h3>
+        <div class="conf-grid">
+          <div class="conf-item">
+            <span class="conf-icon">✦</span>
+            <div>
+              <strong>International Conference on Cancer Epigenetics</strong><br>
+              <span style="color:var(--text-muted); font-size:0.85rem;">MAHE, Manipal</span>
+            </div>
+          </div>
+          <div class="conf-item">
+            <span class="conf-icon">✦</span>
+            <div>
+              <strong>Cell Therapy Conclave</strong><br>
+              <span style="color:var(--text-muted); font-size:0.85rem;">Manipal Centre for Biotherapeutics Research, KMC Manipal</span>
+            </div>
+          </div>
+          <div class="conf-item">
+            <span class="conf-icon">✦</span>
+            <div>
+              <strong>Symposium on Non-Invasive Imaging & Molecular Techniques</strong><br>
+              <span style="color:var(--text-muted); font-size:0.85rem;">NUCSER, Nitte University</span>
+            </div>
+          </div>
+          <div class="conf-item">
+            <span class="conf-icon">✦</span>
+            <div>
+              <strong>Hacking the Gene Code: siRNA Design and Optimisation</strong><br>
+              <span style="color:var(--text-muted); font-size:0.85rem;">Manipal Institute of Technology (MIT), Manipal</span>
+            </div>
+          </div>
+          <div class="conf-item">
+            <span class="conf-icon">✦</span>
+            <div>
+              <strong>International Hands-on Workshop: Genomic Resources & AMR in One Health</strong><br>
+              <span style="color:var(--text-muted); font-size:0.85rem;">FAO Reference Centre, Nitte DU</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WHAT'S NEXT & CONTACT ==================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="future-card">
+          <div class="kicker" style="justify-content: center;">Future Directions</div>
+          <h2>What’s Next: Seeking a Doctoral Position</h2>
+          <p class="lead">
+            I am seeking a PhD position in cancer biology and translational oncology. I am eager to join a research group investigating mechanisms of DNA damage repair adaptation, replication stress tolerance, synthetic lethality, or tumor microenvironment crosstalk.
+          </p>
+          <p style="color:var(--text-secondary); margin-bottom: 32px;">
+            What matters most to me is joining a collaborative laboratory culture that values intellectual rigour, hands-on scientific curiosity, close translational connections to clinical oncology, and dedicated mentorship.
+          </p>
+
+          <div class="contact-channels">
+            <a href="mailto:manoharimk295@gmail.com" class="contact-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>manoharimk295@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/manohari-kulkarni-44b036239" target="_blank" rel="noopener noreferrer" class="contact-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.78v8.37H6.46v-8.37M7.85 6.4a1.65 1.65 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.65-1.66c0-.92-.74-1.66-1.65-1.66z"/></svg>
+              <span>LinkedIn Profile</span>
+            </a>
+            <a href="tel:+919353074647" class="contact-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 9353074647</span>
+            </a>
+          </div>
+
+          <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+            <a href="assets/docs/Manohari_Kulkarni_CV.pdf" download="Manohari_Kulkarni_CV.pdf" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Complete CV (PDF)</span>
+            </a>
+            <a href="cv.html" target="_blank" class="btn btn-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span>View Printable Web CV</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-wrapper">
+      <div>
+        <p style="margin-bottom:4px; font-weight:600; color:var(--text-primary);">Manohari Kulkarni · Academic Portfolio</p>
+        <p style="font-size:0.82rem; margin-bottom:0;">M.Sc. in Cancer Biology · Nitte University Centre for Science Education & Research (NUCSER)</p>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="#about">Overview</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="assets/docs/Manohari_Kulkarni_CV.pdf" download>CV</a></li>
+        <li><a href="#top">Back to top ↑</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Modal Lightbox for Full Thesis Images -->
+  <div id="image-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:1000; padding:20px; align-items:center; justify-content:center; backdrop-filter:blur(6px);">
+    <div style="background:var(--bg-surface); max-width:800px; width:100%; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--line-strong); box-shadow:var(--shadow-lg); position:relative;">
+      <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; border-bottom:1px solid var(--line-subtle);">
+        <h4 id="modal-title" style="font-size:1.1rem; margin:0;">Dissertation Figure</h4>
+        <button id="modal-close" style="background:none; border:none; color:var(--text-primary); font-size:1.5rem; cursor:pointer; line-height:1;">&times;</button>
+      </div>
+      <div style="padding:20px; text-align:center; max-height:70vh; overflow-y:auto;">
+        <img id="modal-img" src="" alt="Thesis Figure" style="max-width:100%; height:auto; border-radius:var(--radius-sm); border:1px solid var(--line-subtle);">
+        <p id="modal-caption" style="margin-top:14px; font-size:0.92rem; color:var(--text-secondary); text-align:left; line-height:1.6;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Feedback -->
+  <div class="toast" id="toast">Citation copied to clipboard!</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

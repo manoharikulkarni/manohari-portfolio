@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curriculum Vitae — Manohari Kulkarni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text-main: #1F2328;
+      --text-muted: #57606A;
+      --border-color: #D0D7DE;
+      --accent: #B26A00;
+      --bg: #FFFFFF;
+      --font-sans: "Plus Jakarta Sans", -apple-system, sans-serif;
+      --font-serif: "Newsreader", Georgia, serif;
+      --font-mono: "JetBrains Mono", monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #F6F8FA;
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .cv-container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 48px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+
+    .actions-bar {
+      max-width: 820px;
+      margin: 0 auto 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: #0969DA;
+      color: #FFFFFF;
+      border-color: #0969DA;
+    }
+
+    .btn:hover {
+      background: #F3F4F6;
+    }
+
+    .btn-primary:hover {
+      background: #0854B2;
+    }
+
+    header.cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid var(--text-main);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+
+    .cv-tagline {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+
+    .contact-info {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .contact-info a {
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .cv-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--border-color);
+    }
+
+    section {
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    .cv-entry {
+      margin-bottom: 18px;
+    }
+
+    .cv-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .entry-title {
+      font-weight: 600;
+      font-size: 15.5px;
+      color: var(--text-main);
+    }
+
+    .entry-date {
+      font-size: 13px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+    }
+
+    .entry-sub {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    ul.cv-bullets {
+      padding-left: 20px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    ul.cv-bullets li {
+      margin-bottom: 5px;
+    }
+
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+    }
+
+    .skills-table td {
+      padding: 6px 10px;
+      vertical-align: top;
+      border-bottom: 1px solid #EFEFEF;
+    }
+
+    .skills-table td:first-child {
+      font-weight: 600;
+      width: 32%;
+      color: var(--text-main);
+    }
+
+    @media print {
+      body { background: #FFFFFF; padding: 0; }
+      .actions-bar { display: none; }
+      .cv-container { border: none; box-shadow: none; padding: 0; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="actions-bar">
+    <a href="index.html" class="btn">← Back to Portfolio</a>
+    <div style="display:flex; gap:10px;">
+      <button onclick="window.print()" class="btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print / Save as PDF
+      </button>
+      <a href="assets/docs/Manohari_Kulkarni_CV.pdf" download="Manohari_Kulkarni_CV.pdf" class="btn btn-primary">
+        Download Original PDF
+      </a>
+    </div>
+  </div>
+
+  <div class="cv-container">
+    <header class="cv-header">
+      <div>
+        <h1>Manohari Kulkarni</h1>
+        <div class="cv-tagline">Postgraduate Researcher · Cancer Biology</div>
+        <div class="contact-info">
+          Email: <a href="mailto:manoharimk295@gmail.com">manoharimk295@gmail.com</a> · Phone: +91 9353074647<br>
+          LinkedIn: <a href="https://www.linkedin.com/in/manohari-kulkarni-44b036239" target="_blank">linkedin.com/in/manohari-kulkarni-44b036239</a> · Bengaluru, India
+        </div>
+      </div>
+      <img src="assets/images/manohari_kulkarni.png" alt="Manohari Kulkarni" class="cv-photo">
+    </header>
+
+    <section>
+      <h2>Research Profile</h2>
+      <p style="font-size:14.5px; color:#333;">
+        M.Sc. graduate in cancer biology seeking to pursue translational research. I am interested in how cancer cells survive and resist cell death, the focus of my research so far. A brief clinical exposure sharpened my goal and keeps my research interests grounded in patient needs. I enjoy making science clear and accessible to everyone. I aim to build an independent research career that brings discoveries to patients and improves lives.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="cv-entry">
+        <div class="entry-header">
+          <span class="entry-title">M.Sc. in Cancer Biology</span>
+          <span class="entry-date">Aug 2024 – May 2026</span>
+        </div>
+        <div class="entry-sub">Nitte University Centre for Science Education and Research (NUCSER), Mangaluru, Karnataka, India</div>
+        <div style="font-size:13.5px; margin-bottom:4px;"><strong>CGPA (up to 3rd semester):</strong> 8.07 / 10</div>
+        <div style="font-size:13.5px; color:var(--text-muted);">Coursework: Cancer genetics, cancer pathology, cell & molecular biology, immunology, and translational oncology with integrated rigorous laboratory training.</div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="entry-header">
+          <span class="entry-title">B.Sc. in Biotechnology, Biochemistry and Genetics</span>
+          <span class="entry-date">2021 – 2024</span>
+        </div>
+        <div class="entry-sub">Dayananda Sagar University, Bengaluru, Karnataka, India</div>
+        <div style="font-size:13.5px; margin-bottom:4px;"><strong>CGPA:</strong> 7.07 / 10</div>
+        <div style="font-size:13.5px; color:var(--text-muted);">Coursework: Biotechnology, biochemistry, genetics, microbiology, and core experimental biology techniques.</div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="entry-header">
+          <span class="entry-title">Class XII (Physics, Chemistry, Mathematics and Biology)</span>
+          <span class="entry-date">2019 – 2021</span>
+        </div>
+        <div class="entry-sub">BASE PU College, Bengaluru, Karnataka, India</div>
+        <div style="font-size:13.5px;"><strong>Score:</strong> 85.6%</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Research Projects</h2>
+      <div class="cv-entry">
+        <div class="entry-header">
+          <span class="entry-title">Role of Compensatory SUMOylation Mechanisms in NSMCE2-Deficient Breast Cancer Cells</span>
+          <span class="entry-date">Aug 2025 – May 2026</span>
+        </div>
+        <div class="entry-sub">Department of Molecular Genetics and Cancer, NUCSER (M.Sc. Dissertation)</div>
+        <ul class="cv-bullets">
+          <li>Investigated how NSMCE2 deficiency in triple-negative breast cancer (TNBC) may trigger compensatory SUMOylation programs that support survival during chemotherapeutic stress; mainly focused on PARP inhibitors (Olaparib).</li>
+          <li>Focused on links between SUMOylation-driven DNA repair adaptation, replication-stress tolerance, and chemoresistance to identify potential therapeutic targets.</li>
+          <li>Built a custom Python image processing tool (OpenCV, NumPy, pandas) to automate wound scratch-assay quantification for thesis data analysis.</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <div class="entry-header">
+          <span class="entry-title">Rutin-Encapsulated PEG-PLGA Nanoparticles for Modulating Autophagy and Metabolism in Cancer</span>
+          <span class="entry-date">Jan 2024 – June 2024</span>
+        </div>
+        <div class="entry-sub">SynTech Bio Solutions Lab, Dayananda Sagar University (B.Sc. Dissertation)</div>
+        <ul class="cv-bullets">
+          <li>Formulated and characterized Rutin-loaded PEG-PLGA nanoparticles via solvent-antisolvent nanoprecipitation to improve compound stability and bioavailability for targeted therapeutic applications.</li>
+          <li>Analyzed nanoparticle morphology and size distribution using Field Emission Scanning Electron Microscopy (FESEM).</li>
+          <li>Integrated molecular docking (AutoDock Vina, Chimera, Discovery Studio) with biological rationale to evaluate interactions with key autophagy/metabolic regulators (mTORC1, ULK1, PFK-1, HK-II, FASN, GLS) and compared with established inhibitors.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+      <div class="cv-entry">
+        <div class="entry-title">Book Chapter: <em>The Role of Epigenetics in Cancer Progression</em></div>
+        <div class="entry-sub">Published in: <em>Cancer Targets: Novel Therapies and Emerging Research Directions (Part 1)</em></div>
+        <div style="font-size:13.5px; color:var(--text-muted);">
+          Bentham Science Publishers · Published: April 24, 2026 · <strong>DOI:</strong> 10.2174/9798898814113126010006
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="cv-entry">
+        <div class="entry-header">
+          <span class="entry-title">Research Intern — The Purple Spark (MedTech Arm of The Yellow Ribbon)</span>
+          <span class="entry-date">June 2026 – July 2026</span>
+        </div>
+        <div class="entry-sub">Orthopaedic Oncology & Sarcoma Care Team, HCG Cancer Centre, Bengaluru</div>
+        <ul class="cv-bullets">
+          <li>Contributed to clinical data collection for a retrospective study on 10+ year sarcoma survivors, recording sarcoma subtype, treatment regimen, and the multidisciplinary oncology team involved.</li>
+          <li>Gained clinical exposure to multidisciplinary decision-making in sarcoma diagnosis, limb-salvage surgery, and long-term surveillance.</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <div class="entry-header">
+          <span class="entry-title">Chemistry Teacher (Part-time)</span>
+          <span class="entry-date">Aug 2026 – Present</span>
+        </div>
+        <div class="entry-sub">Tapovan School, Bengaluru</div>
+        <ul class="cv-bullets">
+          <li>Teach ICSE and ISC Chemistry to grades 7–12, pairing conceptual clarity with hands-on laboratory practicals that build analytical and experimental reasoning.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Conferences, Workshops & Certifications</h2>
+      <ul class="cv-bullets">
+        <li>International Conference on Cancer Epigenetics, MAHE</li>
+        <li>Cell Therapy Conclave, Manipal Centre for Biotherapeutics Research, Kasturba Medical College, MAHE, Manipal</li>
+        <li>Symposium on Non-Invasive Imaging & Molecular Techniques, NUCSER</li>
+        <li>Hacking the Gene Code (siRNA Design and Optimisation), Manipal Institute of Technology, Manipal</li>
+        <li>International Hands-on Workshop: Utilizing microbiome and genomic resources for understanding and mitigating antimicrobial resistance in one health context (FAO Reference Centre, Nitte DU)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <table class="skills-table">
+        <tr>
+          <td>Cell & Molecular Biology</td>
+          <td>Mammalian Cell Culture & Maintenance, qPCR, Western blotting, PCR, Gel electrophoresis, ELISA, Transfection (siRNA/Plasmid)</td>
+        </tr>
+        <tr>
+          <td>Cancer & Nanobiotechnology</td>
+          <td>In Vitro Cancer Models, Nanoparticle Synthesis & Characterization, Drug Delivery Systems, Cytotoxicity & Phenotypic Assays</td>
+        </tr>
+        <tr>
+          <td>Computational & Bioinformatics</td>
+          <td>AutoDock Vina, Biovia Discovery Studio, UCSF Chimera, PyMOL, BLAST, Clustal Omega, SwissADME, PROCHECK</td>
+        </tr>
+        <tr>
+          <td>Data Analysis & Tools</td>
+          <td>Python (Image analysis with OpenCV, NumPy, pandas), GraphPad Prism, R (Basic packages)</td>
+        </tr>
+      </table>
+    </section>
+  </div>
+
+</body>
+</html>
